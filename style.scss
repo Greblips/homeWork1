@@ -69,6 +69,7 @@ body{
 }
 .games__cart{
     display: flex;
+    justify-content: space-between;
     gap:32px;
     &_item1{
         background: url(./img/game1.jpg);
