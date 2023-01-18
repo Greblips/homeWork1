@@ -10,8 +10,8 @@ body{
 }
 
 .center {
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
   }
 
 
@@ -68,12 +68,14 @@ body{
     background-size: cover;
 }
 .games__cart{
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     gap:32px;
+    flex-wrap: wrap;
     &_item1{
         background: url(./img/game1.jpg);
-        width: 379px;
+        min-width: 379px;
         border-radius: 18px;
     &_text{
         padding-top: 236px;
@@ -87,7 +89,7 @@ body{
     }
     &_item2{
         background: url(./img/game2.jpg);
-        width: 379px;
+        min-width: 379px;
         height: 300px;
         border-radius: 18px;
     &_text{
@@ -102,7 +104,7 @@ body{
     }
     &_item3{
         background: url(./img/game3.jpg);
-        width: 379px;
+        min-width: 379px;
         height: 300px;
         border-radius: 18px;
     &_text{

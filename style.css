@@ -10,8 +10,8 @@ body {
 }
 
 .center {
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 .top {
@@ -68,13 +68,15 @@ body {
 }
 
 .games__cart {
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   gap: 32px;
+  flex-wrap: wrap;
 }
 .games__cart_item1 {
   background: url(./img/game1.jpg);
-  width: 379px;
+  min-width: 379px;
   border-radius: 18px;
 }
 .games__cart_item1_text {
@@ -88,7 +90,7 @@ body {
 }
 .games__cart_item2 {
   background: url(./img/game2.jpg);
-  width: 379px;
+  min-width: 379px;
   height: 300px;
   border-radius: 18px;
 }
@@ -103,7 +105,7 @@ body {
 }
 .games__cart_item3 {
   background: url(./img/game3.jpg);
-  width: 379px;
+  min-width: 379px;
   height: 300px;
   border-radius: 18px;
 }
