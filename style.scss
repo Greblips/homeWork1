@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+
+
+
+.top {
+    min-height: 1024px;
+    background:  url(./img/backgrond.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+.top__content{
+    padding-top: 217px;
+    &_header{
+        color: #fff;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+        align-items: center;
+    }
+    &_text{
+        margin-top: 2rem;
+        width: 481px;
+        color: #fff;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+    }
+    &_text_bolt{
+        font-weight: bold;
+    }
+    &_button button{
+        margin-top: 44px;
+        cursor: pointer;
+        width: 234px; 
+        height: 48px;
+        background: #9C0332;
+        border-radius: 30px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+    }
+}
+.games{
+    min-height: 556px;
+    background:  url(./img/Rectangle\ 5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.games__cart{
+    // margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap:31px;
+    flex-wrap: wrap;
+    &_item1{
+        background: url(./img/game1.jpg);
+        min-width: 379px;
+        border-radius: 18px;
+    &_text{
+        padding-top: 236px;
+        padding-left: 32px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #fff;
+    }   
+    }
+    &_item2{
+        background: url(./img/game2.jpg);
+        min-width: 379px;
+        height: 300px;
+        border-radius: 18px;
+    &_text{
+        padding-top: 236px;
+        padding-left: 32px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #fff;
+    }   
+    }
+    &_item3{
+        background: url(./img/game3.jpg);
+        min-width: 379px;
+        height: 300px;
+        border-radius: 18px;
+    &_text{
+        padding-top: 236px;
+        padding-left: 32px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #fff;
+    }   
+    }
+}
