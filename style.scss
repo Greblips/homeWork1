@@ -59,6 +59,10 @@ body{
         justify-content: center;
         color: #FFFFFF;
     }
+    &_button button:hover{
+        transition:  background .3s;
+        background: #EB443F
+    }
 }
 .games{
     min-height: 556px;
@@ -68,7 +72,7 @@ body{
     background-size: cover;
 }
 .games__cart{
-    // margin: 0 auto;
+    
     display: flex;
     justify-content: space-between;
     gap:31px;
@@ -117,4 +121,74 @@ body{
         color: #fff;
     }   
     }
+    &_item1:hover{
+        transition: .3s border;
+        cursor: pointer;
+        border: 3px solid #44D2FF;
+    }
+    &_item2:hover{
+        transition: .3s border;
+        cursor: pointer;
+        border: 3px solid #44D2FF;
+    }
+    &_item3:hover{
+        transition: .3s border;
+        cursor: pointer;
+        border: 3px solid #44D2FF;
+    }
+}
+@media (max-width: 767px){
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      .top{
+        min-height: 735px;
+      }
+    .top__content{
+        padding-top: 238px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        &_header{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        &_text{
+            width: 343px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+    }
+
+
+
+
+} .games__cart{
+  
+    justify-content: center;
+}
+  .games__cart{
+    &_item1{
+       min-width: 343px;
+    }
+    &_item2{
+        min-width: 343px;
+     }
+     &_item3{
+        min-width: 343px;
+        margin-bottom: 127px;
+     }
+
+  }  
 }
