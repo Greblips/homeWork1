@@ -72,12 +72,11 @@ body{
     background-size: cover;
 }
 .games__cart{
-    
     display: flex;
     justify-content: space-between;
     gap:31px;
     flex-wrap: wrap;
-    &_item1{
+      &_item1{
         background: url(./img/game1.jpg);
         min-width: 379px;
         border-radius: 18px;
@@ -137,6 +136,40 @@ body{
         border: 3px solid #44D2FF;
     }
 }
+.game1 .top__content{
+    padding: 0;
+}
+.game1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 800px;
+    background:  url(./img/Rectangle\ 6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__header{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
+    }
+    &__text{
+        margin-top: 20px;
+        width: 604px;
+        color: #fff;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+    }
+  
+
+
+}
+
+
 @media (max-width: 767px){
     .center {
         padding-left: 16px;
@@ -150,7 +183,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-  
+
         &_header{
             font-weight: 700;
             font-size: 32px;
@@ -170,13 +203,10 @@ body{
             text-align: center;
             color: #FFFFFF;
     }
+} 
 
+ .games__cart{
 
-
-
-} .games__cart{
-  
-    justify-content: center;
 }
   .games__cart{
     &_item1{
@@ -191,4 +221,14 @@ body{
      }
 
   }  
+
+ 
+  .game1__header{
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .game1__right svg{
+    width: 340px;
+  }
 }
