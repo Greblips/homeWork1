@@ -58,6 +58,10 @@ body {
   justify-content: center;
   color: #FFFFFF;
 }
+.top__content_button button:hover {
+  transition: background 0.3s;
+  background: #EB443F;
+}
 
 .games {
   min-height: 556px;
@@ -116,4 +120,101 @@ body {
   font-size: 24px;
   line-height: 32px;
   color: #fff;
+}
+.games__cart_item1:hover {
+  transition: 0.3s border;
+  cursor: pointer;
+  border: 3px solid #44D2FF;
+}
+.games__cart_item2:hover {
+  transition: 0.3s border;
+  cursor: pointer;
+  border: 3px solid #44D2FF;
+}
+.games__cart_item3:hover {
+  transition: 0.3s border;
+  cursor: pointer;
+  border: 3px solid #44D2FF;
+}
+
+.game1 .top__content {
+  padding: 0;
+}
+
+.game1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 800px;
+  background: url(./img/Rectangle\ 6.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.game1__header {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.game1__text {
+  margin-top: 20px;
+  width: 604px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    min-height: 735px;
+  }
+  .top__content {
+    padding-top: 238px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top__content_header {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .top__content_text {
+    width: 343px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .games__cart_item1 {
+    min-width: 343px;
+  }
+  .games__cart_item2 {
+    min-width: 343px;
+  }
+  .games__cart_item3 {
+    min-width: 343px;
+    margin-bottom: 127px;
+  }
+  .game1__header {
+    text-align: center;
+    font-size: 32px;
+  }
+  .game1__right svg {
+    width: 340px;
+  }
 }/*# sourceMappingURL=style.css.map */
