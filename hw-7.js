@@ -109,22 +109,21 @@ const dateOnRussian = (currentDate) =>{
     "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
     
     let myDate = currentDate;
-    let hour = myDate.getHours(); 
-    let minute = myDate.getMinutes(); 
-    let second = myDate.getSeconds();
 
-    if (minute < 10) { 
-        minute = "0" + minute; 
+
+    if (myDate.getMinutes() < 10) { 
+        myDate.getMinutes() = "0" + minute; 
     }
-    if (second < 10) { 
-        second = "0" + second; 
+    if (myDate.getMinutes()< 10) { 
+        myDate.getMinutes() = "0" + second; 
     }
 
-    let fullDate = (`${myDate.getDate()} ${months[myDate.getMonth()]} ${myDate.getFullYear()} - это ${days[myDate.getDay()]} \nвремя ${hour}:${minute}:${second}`)
+    let fullDate = (`${myDate.getDate()} ${months[myDate.getMonth()]} ${myDate.getFullYear()} - это ${days[myDate.getDay()]} \nвремя ${myDate.getHours()}:${myDate.getMinutes()}:${myDate.getMinutes()}`)
     
     console.log(fullDate);
 }
-console.log(dateOnRussian(currentDate))
+
+dateOnRussian(currentDate)
 
 
 
