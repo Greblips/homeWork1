@@ -167,6 +167,10 @@ body {
   line-height: 32px;
 }
 
+.game2 {
+  flex-wrap: wrap-reverse;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -215,6 +219,9 @@ body {
     font-size: 32px;
   }
   .game1__right svg {
+    width: 340px;
+  }
+  .game2__left svg {
     width: 340px;
   }
 }/*# sourceMappingURL=style.css.map */
