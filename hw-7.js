@@ -13,15 +13,18 @@ const arrTest = ['Кошка', 'Кит', 'Комар', 'Носорог']
 const arrTest2 = ['яблоко', 'груша', 'гриб', 'огурец']
 
 const searchStart = (arr, str) => {
+    const newArray = []
     arr.forEach((arr) => {
         if (arr.toLowerCase().includes(str.toLowerCase())) {
-            console.log(arr);
+            newArray.push(arr)
         }
     });
+    return newArray
 }
 
 console.log(searchStart(arrTest, 'ко'))
 console.log(searchStart(arrTest2, 'Гру'))
+
 
 
 // Задание 3
