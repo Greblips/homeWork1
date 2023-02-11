@@ -15,7 +15,7 @@ const arrTest2 = ['яблоко', 'груша', 'гриб', 'огурец']
 const searchStart = (arr, str) => {
     const newArray = []
     arr.forEach((arr) => {
-        if (arr.toLowerCase().includes(str.toLowerCase())) {
+        if (arr.toLowerCase().startsWith(str.toLowerCase())) {
             newArray.push(arr)
         }
     });
@@ -23,7 +23,7 @@ const searchStart = (arr, str) => {
 }
 
 console.log(searchStart(arrTest, 'ко'))
-console.log(searchStart(arrTest2, 'Гру'))
+console.log(searchStart(arrTest2, 'гру'))
 
 
 
@@ -52,24 +52,25 @@ console.log(maxMinNumbers())
 
 // Задание 5
 
-const arrRandom = (max) =>{
- return userRandomNumber = (Math.round(Math.random()*max)) 
-
+const arrRandom = (max,min) =>{
+ const userRandomNumber = (Math.round(Math.random()*(max-min) + min)) 
+  console.log(userRandomNumber)
 }
 
-console.log(arrRandom(10))
+arrRandom(10,1)
 
 
 // Задание 6
+
 arr =[];
 
 const getRandomArrNumbers = (numberUserArray) =>{
   for (let i=0; i < Math.floor(numberUserArray/2); i++) {
-    arr.push(Math.round(Math.random()*(numberUserArray-0) + 0))
+    arr.push(Math.round(Math.random()*numberUserArray))
    
   }
 }
-console.log(getRandomArrNumbers(7)) ;
+console.log(getRandomArrNumbers(10)) ;
 console.log(arr)
 
 

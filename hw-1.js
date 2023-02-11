@@ -32,8 +32,7 @@ game1.addEventListener('click', season)
 const game2 = document.querySelector("#startGame2");
 
 function rememberArr() {
-   let fruitsArr =['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин']
-  ;
+   let fruitsArr =['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 
   fruitsArr = fruitsArr.sort(() => Math.random() - 0.5);
   alert (fruitsArr);
