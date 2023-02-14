@@ -124,10 +124,13 @@ const dateOnRussian = (currentDate) =>{
     console.log(fullDate);
 }
 
-dateOnRussian(currentDate)
+// dateOnRussian(currentDate)
 
 
 
 
+let greeting = 'Hello'
 
+ greeting = greeting.split('')
 
+console.log(greeting)
