@@ -124,7 +124,7 @@ const dateOnRussian = (currentDate) =>{
     console.log(fullDate);
 }
 
-// dateOnRussian(currentDate)
+dateOnRussian(currentDate)
 
 
 
